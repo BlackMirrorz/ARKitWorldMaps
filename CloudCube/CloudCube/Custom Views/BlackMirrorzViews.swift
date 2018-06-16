@@ -71,3 +71,27 @@ import ARKit
         clipsToBounds = true
     }
 }
+
+//-------------------------------
+//MARK: - BlackMirrorz Round View
+//-------------------------------
+
+@IBDesignable public class BlackMirrorzRoundView: UIView {
+    
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        layoutView()
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        layoutView()
+    }
+
+    func layoutView(){
+        
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderWidth = 2
+        self.layer.cornerRadius = 5
+    }
+}

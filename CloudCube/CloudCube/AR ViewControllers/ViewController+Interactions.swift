@@ -149,6 +149,7 @@ extension ViewController{
             validModel.geometry?.replaceMaterial(at: index, with: material)
             sendColourData()
             colourToUse = nil
+            faceIndex = nil
         }
     }
     

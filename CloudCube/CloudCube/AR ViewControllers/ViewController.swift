@@ -12,6 +12,9 @@ import MultipeerConnectivity
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var instructionsView: UIView!
+    var canShowControls = false
+    
     //--------------------
     //MARK: - AR Variables
     //--------------------
@@ -44,7 +47,9 @@ class ViewController: UIViewController {
     var colourToUse: UIColor?
     var faceIndex: Int?
     
+    @IBOutlet var colourButtonHolder: UIVisualEffectView!
     @IBOutlet var colourButtons: [UIButton]!
+  
     
     //------------------
     // MARK: - Multipeer
@@ -55,6 +60,8 @@ class ViewController: UIViewController {
     let CLOUD_ANCHOR_ID = "blackMirrorzAnchor"
     @IBOutlet weak var mappingStatusLabel: UILabel!
     @IBOutlet weak var shareButton: UIImageView!
+    @IBOutlet weak var resetButton: UIButton!
+  
     
     //------------------------
     // MARK: - View Life Cycle
@@ -69,12 +76,50 @@ class ViewController: UIViewController {
         //2. Setup Our Placement Gesture Recognizet
         setupGestures()
         
+        //3. Add The Colour Changing Function To Our Colour Buttons
         colourButtons.forEach { $0.addTarget(self, action: #selector(setFaceColour(_:)), for: .touchUpInside) }
-
+        
+        //4. Show The Instructions View
+        showInstructionsView()
     }
     
     override func viewDidAppear(_ animated: Bool) { setupARSession() }
     
+    override func viewDidLayoutSubviews() {
+        
+        self.view.addSubview(instructionsView)
+        instructionsView.center = self.view.center
+        instructionsView.backgroundColor = .clear
+        
+    }
+   
+    //--------------------------
+    // MARK: - User Instructions
+    //--------------------------
+    
+    /// Shows The Initial Instructions
+    func showInstructionsView(){
+        
+        canShowControls = false
+        canDisplayFocusSquare = false
+        colourButtonHolder.alpha = 0
+        resetButton.alpha = 0
+        shareButton.alpha = 0
+
+        UIView.animate(withDuration: 12, animations: { self.instructionsView.alpha = 0 }) { (instructionsHidden) in
+            
+            UIView.animate(withDuration: 1, animations: {
+                
+                self.colourButtonHolder.alpha = 1
+                self.resetButton.alpha = 1
+                self.shareButton.alpha = 1
+                
+            }, completion: { (controlsShown) in
+                self.canShowControls = true
+                self.canDisplayFocusSquare = true
+            })
+        }
+    }
 
     //----------------------
     // MARK: - Data Handling
@@ -163,9 +208,6 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(tapToColourize)
     }
     
-
-    
- 
     //-----------------------
     //MARK: - ARSetup & Reset
     //-----------------------

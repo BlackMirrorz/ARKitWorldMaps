@@ -153,8 +153,8 @@
                                 </constraints>
                                 <blurEffect style="dark"/>
                             </visualEffectView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-bt-vAG">
-                                <rect key="frame" x="8" y="686.66666666666663" width="359" height="14.333333333333371"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-bt-vAG">
+                                <rect key="frame" x="8" y="701" width="359" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -181,7 +181,7 @@
                                     <action selector="resetSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="laC-Oy-wPW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Move Around To Map The Environment Or Wait To Join A Shared Session." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-27-uka">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-27-uka">
                                 <rect key="frame" x="8" y="52" width="243" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="pul-04-IuK"/>
@@ -223,7 +223,10 @@
                     </view>
                     <connections>
                         <outlet property="augmentedRealityView" destination="8z7-gH-JV1" id="I6o-QW-sGI"/>
+                        <outlet property="colourButtonHolder" destination="Wyz-bl-9B8" id="6b8-h8-65f"/>
+                        <outlet property="instructionsView" destination="2nc-G4-qkS" id="14Z-pd-dkN"/>
                         <outlet property="mappingStatusLabel" destination="1Zw-bt-vAG" id="ZWO-0y-iEz"/>
+                        <outlet property="resetButton" destination="l38-7f-A7Q" id="egK-pC-sNA"/>
                         <outlet property="shareButton" destination="7pn-60-q3c" id="Nkx-aD-7lK"/>
                         <outlet property="statusLabel" destination="MUp-27-uka" id="p2s-Em-g55"/>
                         <outletCollection property="colourButtons" destination="pgn-Al-LhD" collectionClass="NSMutableArray" id="rEG-iY-ryt"/>
@@ -235,6 +238,48 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="2nc-G4-qkS" customClass="BlackMirrorzRoundView" customModule="CloudCube" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OEb-Cb-n7a">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="278"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpt-Ib-4ib">
+                                    <rect key="frame" x="8" y="8" width="359" height="95"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">When A Horizontal Plane Has Been Detected, The Foucs Square Will Close, And You Can Place Your Cube By Tapping On The Screen.
+
+To Share Your World Map &amp; Cube With Your Friends, Press This Button:</string>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="11"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="edIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ST7-zq-0lO">
+                                    <rect key="frame" x="145" y="111" width="84" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </imageView>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndw-zs-o1b">
+                                    <rect key="frame" x="8" y="181" width="359" height="97"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">You Can Rotate The Cube Using A PanGesture, &amp; Scale It By Using A Pinch Gesture.
+
+To Change The Colour Of The Cube, Double Tap On Any Of It's Faces &amp; Then Select A Colour From The Buttons At The Bottom!</string>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="11"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <viewLayoutGuide key="safeArea" id="2N9-Ia-xyb"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="Jc2-5M-x1E"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>

@@ -31,7 +31,10 @@ extension ViewController: ARSessionDelegate{
              shareButton.isUserInteractionEnabled = !cloudSession.connectedPeers.isEmpty
         }
         
-        mappingStatusLabel.text = frame.worldMappingStatus.description
+        if canShowControls{
+           mappingStatusLabel.text = frame.worldMappingStatus.description
+        }
+       
         updateUserSessionInformationFor(frame, trackingState: frame.camera.trackingState)
     }
     
@@ -127,10 +130,12 @@ extension ViewController{
             
         }
         
-        //2. Update The Display Message Or Hide If Neccessary
-        statusLabel.text = displayMessage
-        statusLabel.isHidden = displayMessage.isEmpty
-        
+        if canShowControls{
+            //2. Update The Display Message Or Hide If Neccessary
+            statusLabel.text = displayMessage
+            statusLabel.isHidden = displayMessage.isEmpty
+        }
+    
     }
 
 }
