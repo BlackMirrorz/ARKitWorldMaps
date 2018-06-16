@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AF08729320D3EE7300C800E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF08729220D3EE7300C800E3 /* AppDelegate.swift */; };
+		AF08729520D3EE7300C800E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF08729420D3EE7300C800E3 /* ViewController.swift */; };
+		AF08729820D3EE7300C800E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF08729620D3EE7300C800E3 /* Main.storyboard */; };
+		AF08729A20D3EE7400C800E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF08729920D3EE7400C800E3 /* Assets.xcassets */; };
+		AF08729D20D3EE7400C800E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF08729B20D3EE7400C800E3 /* LaunchScreen.storyboard */; };
+		AF0872A520D3EEAD00C800E3 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0872A420D3EEAD00C800E3 /* Box.swift */; };
+		AF0872A720D3EEEC00C800E3 /* ARSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0872A620D3EEEC00C800E3 /* ARSettings.swift */; };
+		AF41F91020D48AC200AB0012 /* ARCloudShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F90F20D48AC200AB0012 /* ARCloudShare.swift */; };
+		AF41F91720D48B7800AB0012 /* FocusSquareSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91220D48B7800AB0012 /* FocusSquareSegment.swift */; };
+		AF41F91820D48B7800AB0012 /* FocusSquare+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91320D48B7800AB0012 /* FocusSquare+Extensions.swift */; };
+		AF41F91920D48B7800AB0012 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91520D48B7800AB0012 /* Utilities.swift */; };
+		AF41F91A20D48B7800AB0012 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91620D48B7800AB0012 /* FocusSquare.swift */; };
+		AF41F91C20D4909600AB0012 /* ARDelegation+Updates.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91B20D4909600AB0012 /* ARDelegation+Updates.swift */; };
+		AF41F91E20D4936B00AB0012 /* BlackMirrorzViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F91D20D4936B00AB0012 /* BlackMirrorzViews.swift */; };
+		AF41F92220D4B32800AB0012 /* ViewController+Interactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF41F92120D4B32800AB0012 /* ViewController+Interactions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AF08728F20D3EE7300C800E3 /* CloudCube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudCube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF08729220D3EE7300C800E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF08729420D3EE7300C800E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF08729720D3EE7300C800E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF08729920D3EE7400C800E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF08729C20D3EE7400C800E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF08729E20D3EE7400C800E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF0872A420D3EEAD00C800E3 /* Box.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		AF0872A620D3EEEC00C800E3 /* ARSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSettings.swift; sourceTree = "<group>"; };
+		AF41F90F20D48AC200AB0012 /* ARCloudShare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARCloudShare.swift; sourceTree = "<group>"; };
+		AF41F91220D48B7800AB0012 /* FocusSquareSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquareSegment.swift; sourceTree = "<group>"; };
+		AF41F91320D48B7800AB0012 /* FocusSquare+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FocusSquare+Extensions.swift"; sourceTree = "<group>"; };
+		AF41F91520D48B7800AB0012 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		AF41F91620D48B7800AB0012 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
+		AF41F91B20D4909600AB0012 /* ARDelegation+Updates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ARDelegation+Updates.swift"; sourceTree = "<group>"; };
+		AF41F91D20D4936B00AB0012 /* BlackMirrorzViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackMirrorzViews.swift; sourceTree = "<group>"; };
+		AF41F92120D4B32800AB0012 /* ViewController+Interactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Interactions.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF08728C20D3EE7300C800E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AF08728620D3EE7300C800E3 = {
+			isa = PBXGroup;
+			children = (
+				AF08729120D3EE7300C800E3 /* CloudCube */,
+				AF08729020D3EE7300C800E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AF08729020D3EE7300C800E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF08728F20D3EE7300C800E3 /* CloudCube.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF08729120D3EE7300C800E3 /* CloudCube */ = {
+			isa = PBXGroup;
+			children = (
+				AF41F91120D48B7800AB0012 /* Apple Focus Square */,
+				AF41F92620D4C1E400AB0012 /* Multipeer */,
+				AF41F92320D4C1A200AB0012 /* Custom Views */,
+				AF41F92520D4C1BB00AB0012 /* Custom Nodes */,
+				AF41F92720D4C1FE00AB0012 /* AR Settings */,
+				AF41F92420D4C1AF00AB0012 /* AR ViewControllers */,
+				AF08729220D3EE7300C800E3 /* AppDelegate.swift */,
+				AF08729620D3EE7300C800E3 /* Main.storyboard */,
+				AF08729920D3EE7400C800E3 /* Assets.xcassets */,
+				AF08729B20D3EE7400C800E3 /* LaunchScreen.storyboard */,
+				AF08729E20D3EE7400C800E3 /* Info.plist */,
+			);
+			path = CloudCube;
+			sourceTree = "<group>";
+		};
+		AF41F91120D48B7800AB0012 /* Apple Focus Square */ = {
+			isa = PBXGroup;
+			children = (
+				AF41F91220D48B7800AB0012 /* FocusSquareSegment.swift */,
+				AF41F91320D48B7800AB0012 /* FocusSquare+Extensions.swift */,
+				AF41F91420D48B7800AB0012 /* Utilities */,
+				AF41F91620D48B7800AB0012 /* FocusSquare.swift */,
+			);
+			path = "Apple Focus Square";
+			sourceTree = "<group>";
+		};
+		AF41F91420D48B7800AB0012 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF41F91520D48B7800AB0012 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AF41F92320D4C1A200AB0012 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				AF41F91D20D4936B00AB0012 /* BlackMirrorzViews.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		AF41F92420D4C1AF00AB0012 /* AR ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF08729420D3EE7300C800E3 /* ViewController.swift */,
+				AF41F92120D4B32800AB0012 /* ViewController+Interactions.swift */,
+				AF41F91B20D4909600AB0012 /* ARDelegation+Updates.swift */,
+			);
+			path = "AR ViewControllers";
+			sourceTree = "<group>";
+		};
+		AF41F92520D4C1BB00AB0012 /* Custom Nodes */ = {
+			isa = PBXGroup;
+			children = (
+				AF0872A420D3EEAD00C800E3 /* Box.swift */,
+			);
+			path = "Custom Nodes";
+			sourceTree = "<group>";
+		};
+		AF41F92620D4C1E400AB0012 /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				AF41F90F20D48AC200AB0012 /* ARCloudShare.swift */,
+			);
+			path = Multipeer;
+			sourceTree = "<group>";
+		};
+		AF41F92720D4C1FE00AB0012 /* AR Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AF0872A620D3EEEC00C800E3 /* ARSettings.swift */,
+			);
+			path = "AR Settings";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF08728E20D3EE7300C800E3 /* CloudCube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF0872A120D3EE7400C800E3 /* Build configuration list for PBXNativeTarget "CloudCube" */;
+			buildPhases = (
+				AF08728B20D3EE7300C800E3 /* Sources */,
+				AF08728C20D3EE7300C800E3 /* Frameworks */,
+				AF08728D20D3EE7300C800E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudCube;
+			productName = CloudCube;
+			productReference = AF08728F20D3EE7300C800E3 /* CloudCube.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF08728720D3EE7300C800E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = BlackMirrorz;
+				TargetAttributes = {
+					AF08728E20D3EE7300C800E3 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = AF08728A20D3EE7300C800E3 /* Build configuration list for PBXProject "CloudCube" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF08728620D3EE7300C800E3;
+			productRefGroup = AF08729020D3EE7300C800E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF08728E20D3EE7300C800E3 /* CloudCube */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF08728D20D3EE7300C800E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF08729D20D3EE7400C800E3 /* LaunchScreen.storyboard in Resources */,
+				AF08729A20D3EE7400C800E3 /* Assets.xcassets in Resources */,
+				AF08729820D3EE7300C800E3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF08728B20D3EE7300C800E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF41F91020D48AC200AB0012 /* ARCloudShare.swift in Sources */,
+				AF41F91E20D4936B00AB0012 /* BlackMirrorzViews.swift in Sources */,
+				AF41F91720D48B7800AB0012 /* FocusSquareSegment.swift in Sources */,
+				AF41F92220D4B32800AB0012 /* ViewController+Interactions.swift in Sources */,
+				AF0872A520D3EEAD00C800E3 /* Box.swift in Sources */,
+				AF08729520D3EE7300C800E3 /* ViewController.swift in Sources */,
+				AF41F91A20D48B7800AB0012 /* FocusSquare.swift in Sources */,
+				AF08729320D3EE7300C800E3 /* AppDelegate.swift in Sources */,
+				AF0872A720D3EEEC00C800E3 /* ARSettings.swift in Sources */,
+				AF41F91920D48B7800AB0012 /* Utilities.swift in Sources */,
+				AF41F91820D48B7800AB0012 /* FocusSquare+Extensions.swift in Sources */,
+				AF41F91C20D4909600AB0012 /* ARDelegation+Updates.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AF08729620D3EE7300C800E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF08729720D3EE7300C800E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF08729B20D3EE7400C800E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF08729C20D3EE7400C800E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF08729F20D3EE7400C800E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF0872A020D3EE7400C800E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF0872A220D3EE7400C800E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHKEQ8PRAX;
+				INFOPLIST_FILE = CloudCube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.BlackMirrorz.CloudCube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF0872A320D3EE7400C800E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DHKEQ8PRAX;
+				INFOPLIST_FILE = CloudCube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.BlackMirrorz.CloudCube;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF08728A20D3EE7300C800E3 /* Build configuration list for PBXProject "CloudCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF08729F20D3EE7400C800E3 /* Debug */,
+				AF0872A020D3EE7400C800E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF0872A120D3EE7400C800E3 /* Build configuration list for PBXNativeTarget "CloudCube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF0872A220D3EE7400C800E3 /* Debug */,
+				AF0872A320D3EE7400C800E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AF08728720D3EE7300C800E3 /* Project object */;
+}

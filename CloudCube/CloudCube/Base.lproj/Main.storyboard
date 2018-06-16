@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CloudCube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8z7-gH-JV1">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            </arscnView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyz-bl-9B8" userLabel="Cube Controls">
+                                <rect key="frame" x="0.0" y="709" width="375" height="69"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Jw0-0O-ewe">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rC0-jY-s6v">
+                                            <rect key="frame" x="72.666666666666686" y="19.666666666666629" width="230" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgn-Al-LhD" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="60N-3m-bec"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="JyN-LP-PNW"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvM-4a-sNN" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="334-z0-WKe"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="rrX-Yx-gMo"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Z7-Cc-GAh" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="79.999999999999986" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="aks-5p-FZM"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="eqW-XJ-9Vw"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzR-fS-ysU" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="YeZ-VQ-eAE"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="ern-0V-ogw"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klS-4x-e5A" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="160" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="XyI-MN-tVq"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="f8V-n6-1GE"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.58188301320000002" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6J-UE-ILa" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                                    <rect key="frame" x="200" y="0.0" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="1XD-JP-sst"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="tPn-02-q7u"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="rC0-jY-s6v" firstAttribute="centerY" secondItem="Jw0-0O-ewe" secondAttribute="centerY" id="AZw-aK-qS9"/>
+                                        <constraint firstItem="rC0-jY-s6v" firstAttribute="centerX" secondItem="Jw0-0O-ewe" secondAttribute="centerX" id="byW-5F-qB3"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="00c-q1-rcT"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zw-bt-vAG">
+                                <rect key="frame" x="8" y="686.66666666666663" width="359" height="14.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l38-7f-A7Q" customClass="BlackMirrorzRoundButton" customModule="CloudCube" customModuleProvider="target">
+                                <rect key="frame" x="317" y="52" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="428-3G-jmO"/>
+                                    <constraint firstAttribute="width" constant="50" id="Gxr-QF-UMr"/>
+                                </constraints>
+                                <state key="normal" image="restart"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetSession" destination="BYZ-38-t0r" eventType="touchUpInside" id="laC-Oy-wPW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Move Around To Map The Environment Or Wait To Join A Shared Session." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUp-27-uka">
+                                <rect key="frame" x="8" y="52" width="243" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="pul-04-IuK"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="BhX-Wa-Q3g"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="edIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7pn-60-q3c">
+                                <rect key="frame" x="259" y="52" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bVp-0O-Age"/>
+                                    <constraint firstAttribute="width" constant="50" id="sHw-lO-zRI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Wyz-bl-9B8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="3Kh-0m-45w"/>
+                            <constraint firstItem="l38-7f-A7Q" firstAttribute="leading" secondItem="7pn-60-q3c" secondAttribute="trailing" constant="8" id="480-Qk-AmM"/>
+                            <constraint firstItem="Wyz-bl-9B8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4UE-WL-2Zm"/>
+                            <constraint firstItem="7pn-60-q3c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="53m-Hg-4te"/>
+                            <constraint firstItem="1Zw-bt-vAG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="65D-SD-vNw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8z7-gH-JV1" secondAttribute="trailing" id="6Ib-dj-KGP"/>
+                            <constraint firstItem="MUp-27-uka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="75w-FF-tVT"/>
+                            <constraint firstItem="8z7-gH-JV1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7GA-17-pwt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l38-7f-A7Q" secondAttribute="trailing" constant="8" id="IcC-Nv-T2b"/>
+                            <constraint firstItem="7pn-60-q3c" firstAttribute="leading" secondItem="MUp-27-uka" secondAttribute="trailing" constant="8" id="KWR-zu-92f"/>
+                            <constraint firstItem="MUp-27-uka" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="UJ8-I6-0Wd"/>
+                            <constraint firstItem="Wyz-bl-9B8" firstAttribute="top" secondItem="1Zw-bt-vAG" secondAttribute="bottom" constant="8" id="iF1-IU-fQK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8z7-gH-JV1" secondAttribute="bottom" id="kM0-Wn-e3p"/>
+                            <constraint firstItem="l38-7f-A7Q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="ql2-zn-IVC"/>
+                            <constraint firstItem="8z7-gH-JV1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tZI-8b-yyh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Zw-bt-vAG" secondAttribute="trailing" constant="8" id="uVU-Y3-pxx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wyz-bl-9B8" secondAttribute="bottom" id="xdG-wP-Kn9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="augmentedRealityView" destination="8z7-gH-JV1" id="I6o-QW-sGI"/>
+                        <outlet property="mappingStatusLabel" destination="1Zw-bt-vAG" id="ZWO-0y-iEz"/>
+                        <outlet property="shareButton" destination="7pn-60-q3c" id="Nkx-aD-7lK"/>
+                        <outlet property="statusLabel" destination="MUp-27-uka" id="p2s-Em-g55"/>
+                        <outletCollection property="colourButtons" destination="pgn-Al-LhD" collectionClass="NSMutableArray" id="rEG-iY-ryt"/>
+                        <outletCollection property="colourButtons" destination="YvM-4a-sNN" collectionClass="NSMutableArray" id="naa-Ho-NgD"/>
+                        <outletCollection property="colourButtons" destination="9Z7-Cc-GAh" collectionClass="NSMutableArray" id="ayy-1C-nXf"/>
+                        <outletCollection property="colourButtons" destination="mzR-fS-ysU" collectionClass="NSMutableArray" id="EYW-JC-Evy"/>
+                        <outletCollection property="colourButtons" destination="klS-4x-e5A" collectionClass="NSMutableArray" id="dug-Zf-A7Z"/>
+                        <outletCollection property="colourButtons" destination="m6J-UE-ILa" collectionClass="NSMutableArray" id="6Bi-Vo-4iU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edIcon" width="228" height="258"/>
+        <image name="restart" width="20" height="23"/>
+    </resources>
+</document>
