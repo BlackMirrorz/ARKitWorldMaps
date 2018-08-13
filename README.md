@@ -1,5 +1,5 @@
 
-# ARKitCloudShare
+# ARKitWorldMaps
 
 This project is a basic example of using `MultipeerConnectivity` within `ARKit2` to share `ARWorldMaps` and `ARAnchors` across multiple devices.
 
