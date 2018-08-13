@@ -133,7 +133,7 @@ class ViewController: UIViewController {
     func receivedData(_ data: Data, from peer: MCPeerID) {
         
         //1. Try To UnArchive Our Data As An ARWorldMap
-        if  let unarchivedMap = try? NSKeyedUnarchiver.unarchivedObject(of: ARWorldMap.classForKeyedUnarchiver(), from: data),
+        if  let unarchivedMap = try? NSKeyedUnarchiver.unarchivedObject(ofClasses: [ARWorldMap.classForKeyedUnarchiver()], from: data),
             let worldMap = unarchivedMap as? ARWorldMap {
             
             //2. Now A Map Is Available Restart The Session
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
             
         }
         //2. Try To Unarchive Our Data As An ARAnchor
-        else if let unarchivedAnchor = try? NSKeyedUnarchiver.unarchivedObject(of: ARAnchor.classForKeyedUnarchiver(), from: data),
+        else if let unarchivedAnchor = try? NSKeyedUnarchiver.unarchivedObject(ofClasses: [ARAnchor.classForKeyedUnarchiver()], from: data),
             let anchor = unarchivedAnchor as? ARAnchor {
             
             augmentedRealitySession.add(anchor: anchor)
