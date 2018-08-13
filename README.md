@@ -11,6 +11,10 @@ The Master Branch was originally compiled in XCode10 Beta using Swift 4.
 
 An updated Branch called 'Swift4.2' contains the project built in XCode 10.5 Beta and uses Swift 4.2.
 
+**Requirements:**
+
+The project is setup for iPhone, and in Landscape Orientation.
+
 **Core Functionality:**
 
 The application automatically creates an `MCSession` which can be found in `ARCloudShare.swift` and shares `ARWorldMaps` and `ARAnchors` in real time.
