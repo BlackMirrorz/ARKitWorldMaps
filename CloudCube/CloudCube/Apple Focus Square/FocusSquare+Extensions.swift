@@ -3,7 +3,7 @@
 //  TCloud
 //
 //  Created by Josh Robbins on 04/06/2018.
-//  Copyright © 2018 Twinkl Limited. All rights reserved.
+//  Copyright © 2018 BlackMirrorz. All rights reserved.
 //
 
 import Foundation
